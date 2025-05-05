@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Language Learning Cards Assistant Survey</h1>
+    <p id="description">Hey there! 🤗 We're excited to get your input on the Language Learning Cards Assistant! Your feedback is essential for our improvements. Thanks for helping us make our app even better! 😊</p>
+        <form id="survey-form" action="">
+            <fieldset>
+                <label for="name" id="name-label">Name <input type="text" name="name" id="name" class="first-form-controls" placeholder="Type in yor name" required></label>
+                <label for="email" id="email-label">Email <input type="email" name="email" id="email" class="first-form-controls" placeholder="Type in your email" required></label>
+                <label for="number" id="number-label">Age (optional) <input type="number" name="age" id="number" class="first-form-controls" placeholder="Type in your age" min="18" max="120">
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>How likely is that you recomend our app to other people?</p>
+                <label for="high-likely" class="recomendation-likely">
+                    <input type="radio" name="recomendation-likely" value="high" id="high-likely" checked> Yes, I'm sure
+                </label>
+                <label for="midium-likely" class="recomendation-likely">
+                    <input type="radio" name="recomendation-likely" value="medium" id="midium-likely"> Maybe
+                </label>
+                <label for="low-likely" class="recomendation-likely">
+                    <input type="radio" name="recomendation-likely" value="low" id="low-likely"> No sure
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>How did you dicover our app?</p>
+                    <select name="referer" id="dropdown" required>
+                        <option value="">Pick an option</option>
+                        <option value="">YouTube video</option>
+                        <option value="">Friend's recomendation</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <p>Which features do you mind need to improve?</p>
+                <label for="feature-selection-pictures"><input type="checkbox" value="pictues" id="feature-selection-pictures"> The picture filling</label>
+                <label for="feature-selection-setences"><input type="checkbox" value="sentences" id="feature-selection-setences"> The contextual sentence filling</label>
+                <label for="feature-selection-definitions"><input type="checkbox" value="definitions" id="feature-selection-definitions"> The suitibe-defitions filling</label>
+            </fieldset>
+            <fieldset>
+                <p>Do you have any additional remark? We listen you</p>
+                <textarea name="aditional-comments" id="aditional-comments" rows="8" placeholder=""></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="privacy-policy">
+                    <input type="checkbox" value="privacy-policy" id="privacy-policy" required> To submit you need to have read and accepted our <a href="" alt="privacy policy link">privacy policy</a>
+                </label>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+</body>
+</html>
